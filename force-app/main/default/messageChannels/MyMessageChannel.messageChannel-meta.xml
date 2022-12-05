@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+   <masterLabel>MyMessageChannel</masterLabel>
+   <isExposed>true</isExposed>
+    <description>This is a Shubham Lightning Message Channel.</description>
+
+    <lightningMessageFields>
+        <fieldName>empName</fieldName>
+        <description>Name of Employee</description>
+    </lightningMessageFields>
+    
+    <lightningMessageFields>
+        <fieldName>empAge</fieldName>
+        <description>Age of Employee</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

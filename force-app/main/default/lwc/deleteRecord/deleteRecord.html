@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Deleting Contact Records"> 
+      <div class="slds-p-around_medium">
+      <lightning-datatable  
+           columns={columns} key-field="Id" max-row-selection="10" data={contacts} onrowselection={deleteHandler} draft-values={draftValue}>  
+        </lightning-datatable>
+      </div>
+    </lightning-card>
+  </template>

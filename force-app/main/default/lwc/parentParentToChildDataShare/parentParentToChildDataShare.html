@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Parent Component">
+        <lightning-input label="Enter Number" type="number" onchange={handleNumber}></lightning-input><br/>
+     <lightning-button label="Add 100" onclick={changeCounter}></lightning-button>
+     
+    <c-child-parent-to-child-data-share counter={scounter}></c-child-parent-to-child-data-share>
+     
+    </lightning-card>
+    </template>

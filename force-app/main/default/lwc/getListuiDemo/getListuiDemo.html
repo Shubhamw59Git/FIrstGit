@@ -1,0 +1,32 @@
+<template>
+<lightning-card title="getListUi Demo">s
+<div class="slds-var-m-around_medium">
+<table class="slds-table slds-table_cell-buffer slds-table_bordered">
+<thead>
+    <tr>
+        <th>Name </th>
+        <th>Email</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody>
+    <template for:each={contacts} for:item="contact">
+        <tr key={contact.fields.Id.Value} style="background-color:lightgreen">
+            <td>{contact.fields.Name.value}</td>
+            <td>{contact.fields.Email.value}</td>
+            <td>{contact.fields.Title.value}</td>
+        </tr>
+    </template>
+</tbody>
+</table>
+</div>
+<h1 class="slds-grid" align="center">
+    <div class="slds-m-around_medium">
+        <lightning-button label=" < " onclick={handlePreviousPage}></lightning-button>
+    </div>
+    <div class="slds-m-around_medium">
+        <lightning-button label=" > " onclick={handleNextPage}></lightning-button>
+    </div>
+</h1>
+</lightning-card>    
+</template>

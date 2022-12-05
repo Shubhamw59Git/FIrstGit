@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Display Contact Records"> 
+        <!-- <lightning-button slot="actions" label="Show Contact" onclick={showContact}></lightning-button> -->
+        <lightning-datatable 
+          data={contactList} columns={colm} key-field="id" max-row-selection="10">  </lightning-datatable>
+    </lightning-card>
+</template>

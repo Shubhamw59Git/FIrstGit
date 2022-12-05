@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <div>
+            <h1>Check Eligibility to cast vote</h1>
+            <lightning-input type="number" label="Enter Age" onchange={submitAge}></lightning-input><br/>
+            <lightning-button label="CHECK AGE" onclick={submitStatus}></lightning-button>
+            <template if:true={defaultStatus}>
+               <template if:true={status}>
+                    <h1>You Are Eligible to Cast Vote</h1>
+               </template>
+               <template if:false={status}>
+                <h1>You Are Not Eligible to Cast Vote</h1>
+               </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

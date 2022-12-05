@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Deleting Account Records"> 
+        <lightning-button slot="actions" label="Delete Account" onclick={deleteRecord}></lightning-button> 
+        <lightning-datatable  
+          data={accountList} columns={colm} key-field="Id" max-row-selection="10" onrowselection={handelSelection}>  
+        </lightning-datatable>
+    </lightning-card>
+  </template>

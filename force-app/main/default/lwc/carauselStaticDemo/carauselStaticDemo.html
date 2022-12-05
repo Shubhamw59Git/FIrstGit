@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>
+    <div class="slds-size_3-of-3">
+        <lightning-carousel>
+            <lightning-carousel-image
+                src={companyLogoUrl}
+                header="Company logo"
+                description="Company logo uploaded to a static resource"
+                alternative-text="Company logo">
+            </lightning-carousel-image>
+
+            <lightning-carousel-image
+                src={product1Url}
+                header="Fantastic product 1"
+                description="Fantastic product image in a zip file"
+                alternative-text="Fantastic product 1">
+            </lightning-carousel-image>
+
+            <lightning-carousel-image
+                src={product2Url}
+                header="Fantastic product 2"
+                description="Fantastic product image in a zip file"
+                alternative-text="Fantastic product 2">
+            </lightning-carousel-image>
+        </lightning-carousel>
+    </div>
+</lightning-card>
+</template>

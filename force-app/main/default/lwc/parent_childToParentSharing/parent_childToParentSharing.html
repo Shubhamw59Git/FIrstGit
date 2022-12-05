@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <lightning-button label="ShowModal" onclick={cickhandler}></lightning-button><br/>
+            <h1>
+               {message}
+            </h1>
+            <template if:true={ShowModal}>
+            <c-child_child-to-parent-sharing onclose={closehandler}> </c-child_child-to-parent-sharing>
+            </template>
+        </div>
+    </lightning-card>
+</template>

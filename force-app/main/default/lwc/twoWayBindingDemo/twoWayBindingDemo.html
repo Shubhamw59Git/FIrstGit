@@ -1,0 +1,22 @@
+<template>
+    <!--<lightning-card title="Two Way Binding Demo" >
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" label="Enter Name" onchange={changeName}> </lightning-input>
+            <h1>Name: {name}</h1><br/>
+            <lightning-input type="number" label="Enter Age" onchange={changeAge}> </lightning-input>
+            <h1>Age: {age}</h1>
+        </div>
+    </lightning-card> -->
+    <lightning-card title="Sample Screen">
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" label="Door Number" onchange={changeDno}></lightning-input>
+            <h1>Door No.: {address.Dno}</h1>
+            <lightning-input type="text" label="Street Name" onchange={changestName}></lightning-input>
+            <h1>Street Name: {address.stName}</h1>
+            <lightning-input type="text" label="City Name" onchange={changecity}></lightning-input>
+            <h1>City: {address.city}</h1>
+            <lightning-input  type="text" label="Skill" onchange={changeSkill}></lightning-input>
+            <h1>Skill: {firstSkill}</h1>
+        </div>
+    </lightning-card>
+</template>

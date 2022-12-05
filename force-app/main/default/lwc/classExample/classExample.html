@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Apex Wire Method">
+        <lightning-input label="Minimum Annual_Revenue" onchange={changeMin}></lightning-input>
+        <lightning-input label="Maximum Annual_Revenue" onchange={changeMax}></lightning-input>
+    </lightning-card>
+        <div class="slds-p-around_medium">
+            <template if:true={accdata.data}>
+                <div class="slds-grid slds-wrap ">
+                <template for:each={accdata.data} for:item="acc">
+                    <div key={acc.Id}>
+                        <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <lightning-card >
+                         <p>Account Name:{acc.Name}</p>
+                         <p>AnnualRevenue:{acc.AnnualRevenue}</p>
+                        </lightning-card>
+            </div>
+              </div>
+                </template>
+            </div>
+            </template>
+            <template if:false={accdata.data}>
+                <div>Sorry No Record Exist</div>
+            </template>
+        </div>
+    
+</template>

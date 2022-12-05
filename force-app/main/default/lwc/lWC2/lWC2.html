@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+    <div  class="slds-p-around_medium">
+    
+        <lightning-input type="number" label="Number_Field"></lightning-input>
+        <lightning-input type="time" label="Time_Field"></lightning-input>
+        <lightning-input type="Date" label="Date_Field"></lightning-input>
+        <lightning-input type="Email" label="Email_Field"></lightning-input>
+        <lightning-input type="toggle" label="Toggle_Field"></lightning-input>
+    
+     <br/><br/>
+
+    
+    
+    <lightning-textarea label="Text Area Field"></lightning-textarea>
+    <lightning-badge label="Open"></lightning-badge>
+    <lightning-badge label="In Progress"></lightning-badge>
+    <lightning-badge label="Done"></lightning-badge>
+    <br/><br/>
+    
+        <lightning-button-stateful
+        label-when-off="Follow"
+        label-when-on="Following"
+        icon-name-when-off="utility:add"
+        icon-name-when-on="utility:check"
+        icon-name-when-hover="utility:close">
+       </lightning-button-stateful>
+    </div><br/><br/>
+</lightning-card>
+</template>

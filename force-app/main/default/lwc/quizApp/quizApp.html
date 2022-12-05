@@ -1,0 +1,39 @@
+<template>
+<lightning-card title="Quiz App in LWC">
+    <form>
+        <template for:each={questions} for:item="ques">
+                <div key={ques.id}>
+                <div>
+                    {ques.id} - {ques.question}
+                </div>
+                <div>
+                  <input type="radio" name={ques.id} value="a" onchange={changeValue}/>
+                  {ques.answers.a}
+                </div>
+
+                <div>   
+                 <input type="radio" name={ques.id} value="b" onchange={changeValue}/>
+                 {ques.answers.b}
+                </div>
+
+                <div>
+                 <input type="radio" name={ques.id} value="c" onchange={changeValue}/>
+                 {ques.answers.c}
+                </div>
+                </div>
+        </template>
+
+        <lightning-button 
+                variant="brand" 
+                type="submit"
+                label="Submit">         
+        </lightning-button>
+
+        <lightning-button 
+                variant="brand" 
+                type="reset"
+                label="Reset">
+        </lightning-button>
+    </form>
+</lightning-card>
+</template> 
