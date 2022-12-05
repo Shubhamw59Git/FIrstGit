@@ -10,7 +10,7 @@ export default class CalloutDemo extends LightningElement {
     @track error;
     @wire(getcontact) conList(result) 
     {
-      
+      //pandhari done
         if (result.data) 
         {
           let rec = JSON.parse(result.data);
